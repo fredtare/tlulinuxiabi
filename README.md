@@ -4,11 +4,13 @@ Kasulikud asjad informaatika kursuse õpilasele, et kasutada linuxit koolitööd
 #######################################################################
 TLU siseveebi (greeny ja tunneli ühendus ehk PUTTY ja WINSCP asendus)
 #######################################################################
+
 Kuna mina kasutan fedora 41te, mis on veits uuemäärmuslik siis võib olla, et osasid samme ei ole vaja. Tasub proovida sialgu ühendada, ehk toimib. Kui ei toimi saab hakata confi asju uurima.
 
 ##############
 Putty asendus:
 ##############
+
 Terminal lahti ja toksida sisse (ilma dollarimärgita) ning sisestada oma paroolid järgmistele käskudele:
 
 Greeny:
@@ -26,6 +28,7 @@ ja automatiseerimiseks pidin kasutusele võtma expecti.
 ###############
 WINSCP asendus:
 ###############
+
 Ehk sftp ühendus.
 Gnome brauseril Nautilus on sftp klient sisse ehitatud. Sa lihtsalt paned tunneli käima, lähed kausta 'Network' või  osadel vanematel 'other location', toksid sisse 
 sftp://localhost:8022
@@ -34,6 +37,7 @@ ja kasutad seda nagu see oleks folder sinu enda arvutis.
 ##############
 Conf:
 ##############
+
 Ju siis ei toiminud. 
 Kuna fedora41, nagu ennist mainitud, veits radikaalsem ja uuem, siis sa ei taha su OS esialgu lubada ühendust kooli serveritega turvariskide tõttu. Selleks tuleb lisada ssh conf faili hostinimed ja võtmed ning 
 downgradeda turvatserte. Õnneks asi on kiire ja lihtne.
@@ -50,6 +54,7 @@ Kuna fedora certid on liiga uued, siis tuleb superuser doga sisse lükata käsk,
 ###############
 Postrgres conf:
 ################
+
 Teine semester OOPis tuleb kasutusele postgres ja kuna linuxit default kasutatakse tavaliselt selle serverina, siis on asjad veidi teised: tasub tirida PGadmin4 software centerist ja postgresi server terminalist eraldi.
 Toon siinkohal välja, etpgadmin4 ei ole server vaid ainult gui sellele. Need on eraldatud linuxil ja mis kõige tüütum, sa pead postgresi andmebaasi servu ümber
 confima, et ta saaks localhostis pgadminniga räägitud. Selleks tuleb auth method muuta conf failis ümber md5ks. Väga huvitav ja tore protsess, mida ei soovita jätta tunni ajal tegemiseks.
