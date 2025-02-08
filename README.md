@@ -68,6 +68,9 @@ Siin on lisatud nii greeny ja ka teise semestril vaja minev TLU SFTP ühendus. K
 
 Terminali conf:
 Kuna fedora certid on liiga uued, siis tuleb superuser doga sisse lükata käsk, et ssh kasutaks legacy või fedora39 tserte. See tuli välja nõnda et ükskõik mis hosti faili configa ta ei toiminud ja osade confidega andis tserti errorit.
+```
+update-crypto-policies —set LEGACY
+```
 
 
 
