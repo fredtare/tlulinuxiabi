@@ -1,5 +1,5 @@
 # tlulinuxiabi
-Kasulikud asjad informaatika kursuse õpilasele, et kasutada linuxit koolitöödeks
+Kasulikud asjad informaatika kursuse õpilasele, et kasutada linuxit koolitöödeks. Kasutada koostöös ametlike juhenditega.
 
 #######################################################################
 
