@@ -2,7 +2,9 @@
 Kasulikud asjad informaatika kursuse õpilasele, et kasutada linuxit koolitöödeks
 
 #######################################################################
+
 TLU siseveebi (greeny ja tunneli ühendus ehk PUTTY ja WINSCP asendus)
+
 #######################################################################
 
 Kuna mina kasutan fedora 41te, mis on veits uuemäärmuslik siis võib olla, et osasid samme ei ole vaja. Tasub proovida sialgu ühendada, ehk toimib. Kui ei toimi saab hakata confi asju uurima.
