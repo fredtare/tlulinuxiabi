@@ -1,4 +1,4 @@
-# tlulinuxiabi
+# TLU linuxi abi
 Kasulikud asjad informaatika kursuse õpilasele, et kasutada linuxit koolitöödeks. Kasutada koostöös ametlike juhenditega.
 
 #######################################################################
@@ -50,6 +50,20 @@ downgradeda turvatserte. Õnneks asi on kiire ja lihtne.
 
 SSH faili conf: 
 Kui faili ei ole, tuleb luua.
+```
+Asukoht: /home/sinukasutaja/.ssh/conf
+```
+Faili sisu:
+```
+Host lin2.tlu.ee
+    HostKeyAlgorithms +ssh-rsa
+    KexAlgorithms +diffie-hellman-group1-sha1
+    
+
+Host tlu.ee
+    HostkeyAlgorithms +ssh-rsa
+    PubkeyAcceptedAlgorithms +ssh-rsa
+```
 Siin on lisatud nii greeny ja ka teise semestril vaja minev TLU SFTP ühendus. Kui sul tekib mõne kooli teenusega ühendusprobleem uuel süsteemil, tasub alati leida viis ühendust terminalist testida, et näha kas on vaja siia uusi hoste lisada.
 
 Terminali conf:
