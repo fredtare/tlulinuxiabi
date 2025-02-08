@@ -80,7 +80,7 @@ $ createuser kasutajanimisiia -P                   #selle järel küsib paroole.
 Confifaili saab nanoga muuta kiirelt siit:
 (allikas:  https://idroot.us/install-postgresql-fedora-41/)
 ```
-$ sudo nano /var/lib/pgsql/data/pg_hba.conf
+$ sudo nano /var/lib/pgsql/data/pg_hba.conf #tõlge: superuserina võta lahti tekstiprotsessor nano ja ava sellega see fail
 ```
 Siis tasub kerida alla, ning veenduda, et ülemine blokk näeks välja selline, kus viimane tulp muudetud lihtsalt MD5'ks
 ```
@@ -89,9 +89,12 @@ local   all             all                                     md5
 host    all             all             127.0.0.1/32            md5
 host    all             all             ::1/128                 md5
 ```
+Nanos ^ sümbol tähendab controli ja sul on vaja panna write out ja siis exit. 
 
 
 Ja nüüd saad lihtsalt startida postgresi käsuga
-$ sudo systemctl start postgresql 
+```
+$ sudo systemctl start postgresql
+```
 ja logida sinna sisse pgadmin4jast. 
 
