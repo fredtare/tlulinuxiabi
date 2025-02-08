@@ -80,14 +80,14 @@ $ sudo nano /var/lib/pgsql/data/pg_hba.conf
 
 Siis tasub kerida alla, ning veenduda, et ülemine blokk näeks välja selline, kus viimane tulp muudetud lihtsalt MD5'ks
 
-type    database       user              method
+'''type    database       user              method
 
 local   all             all                                     md5
 
 host    all             all             127.0.0.1/32            md5
 
 host    all             all             ::1/128                 md5
-
+'''
 
 
 Ja nüüd saad lihtsalt startida postgresi käsuga
