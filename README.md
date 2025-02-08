@@ -67,7 +67,7 @@ Host tlu.ee
 Siin on lisatud nii greeny ja ka teise semestril vaja minev TLU SFTP ühendus. Kui sul tekib mõne kooli teenusega ühendusprobleem uuel süsteemil, tasub alati leida viis ühendust terminalist testida, et näha kas on vaja siia uusi hoste lisada.
 
 Terminali conf:
-Kuna fedora certid on liiga uued, siis tuleb superuser doga sisse lükata käsk, et ssh kasutaks legacy või fedora39 tserte. See tuli välja nõnda et ükskõik mis hosti faili configa ta ei toiminud ja osade confidega andis tserti errorit.
+Kuna fedora certid on liiga uued, siis tuleb superuser doga sisse lükata käsk, et ssh kasutaks legacy või fedora39 tserte. 
 ```
 update-crypto-policies —set LEGACY
 ```
