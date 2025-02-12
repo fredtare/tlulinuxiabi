@@ -49,10 +49,12 @@ Kuna fedora41, nagu ennist mainitud, veits radikaalsem ja uuem, siis sa ei taha 
 downgradeda turvatserte. Õnneks asi on kiire ja lihtne.
 
 SSH faili conf: 
-Kui faili ei ole, tuleb luua.
+Kui faili ei ole, tuleb luua. On kaks varianti, kas teha seda süsteemi laiusega või ainult sinu kontoga.
+Piiratud ja turvalisem:
 ```
-Asukoht: /home/sinukasutaja/.ssh/conf
+Asukoht: /home/sinukasutaja/.ssh/config
 ```
+
 Faili sisu:
 ```
 Host lin2.tlu.ee
@@ -64,7 +66,19 @@ Host tlu.ee
     HostkeyAlgorithms +ssh-rsa
     PubkeyAcceptedAlgorithms +ssh-rsa
 ```
-Siin on lisatud nii greeny ja ka teise semestril vaja minev TLU SFTP ühendus. Kui sul tekib mõne kooli teenusega ühendusprobleem uuel süsteemil, tasub alati leida viis ühendust terminalist testida, et näha kas on vaja siia uusi hoste lisada.
+(Siin on lisatud nii greeny ja ka teise semestril vaja minev TLU SFTP ühendus. Kui sul tekib mõne kooli teenusega ühendusprobleem uuel süsteemil, tasub alati leida viis ühendust terminalist testida, et näha kas on vaja siia uusi hoste lisada.)
+
+Süsteemilaiune:
+```
+Asukoht: /etc/ssh/ssh_config
+```
+Ja lõppu lisada:
+```
+Host *
+    HostKeyAlgorithms +ssh-rsa
+    KexAlgorithms +diffie-hellman-group1-sha1
+```
+
 
 Terminali conf:
 Kuna fedora certid on liiga uued, siis tuleb superuser doga sisse lükata käsk, et ssh kasutaks legacy või fedora39 tserte. 
