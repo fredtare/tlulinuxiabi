@@ -1,4 +1,4 @@
-# TLU linuxi abi
+# TLU Greenysse ja mujale ühendamine linuxil
 Kasulikud asjad informaatika kursuse õpilasele, et kasutada linuxit koolitöödeks. Kasutada koostöös ametlike juhenditega.
 
 #######################################################################
